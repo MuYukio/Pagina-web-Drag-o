@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drgagoes</title>
-    <link rel="stylesheet" href="Assets/CSS/Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="Assets/CSS/styles.css">
 </head>
 <body>
     <header>
         <img id = "logo" src="Assets/Images/dragaologo.png" alt="logo de dragao">
-
+        <button id="menu-toggle" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
         <nav>
             <ul id= "navBar">
                 <li><a href="#"class="navBarItem">Inicio</a ></li>
@@ -33,23 +35,45 @@
         </div>
 
 
-        <section id="MenuDiv">
+        <section id="MenuDiv1">
             <h1 class = "section-title"> Escolha uma das 3 Opções</h1>
             <p>Elas definiram o seu camimho</p>
-            <div id="MenuDentroDiv">
-                <div>
-                    <img id="imgMenuDiv"src="Assets/Images/DragaoMenu.jpg" alt="">
+
+            <div class ="carousel-buttons"> 
+                <button id="btn-left"> ⇦ </button>
+                <button id="btn-right"> ⇨ </button>
+            </div>
+
+            <div id="MenuDentroDiv1">
+                <div  class="MenuDentroDivCards1">
+                    <img class="imgMenuDiv"src="Assets/Images/DragaoMenu.jpg" alt="">
                     <p>Mais imagens de Dragoes</p>
                 </div>
-                <div>
-                    <img id="imgMenuDiv" src="Assets/Images/Pantheon.jpg" alt="">
+                <div class="MenuDentroDivCards1">
+                    <img class="imgMenuDiv" src="Assets/Images/Pantheon.jpg" alt="">
                     <p>Inimigos dos Dragoes</p>
                 </div>
-                <div>
-                    <img id="imgMenuDiv"src="Assets/Images/magonovo.jpg" alt="">
+                <div class="MenuDentroDivCards1">
+                    <img class="imgMenuDiv"src="Assets/Images/magonovo.jpg" alt="">
                     <P>Como dominar a magia do fogo</P>
                 </div>
+
+                <div class="MenuDentroDivCards1">
+                    <img class="imgMenuDiv"src="Assets/Images/DragaoMenu.jpg" alt="">
+                    <p>Mais imagens de Dragoes</p>
+                </div>
+                <div class="MenuDentroDivCards1">
+                    <img class="imgMenuDiv" src="Assets/Images/Pantheon.jpg" alt="">
+                    <p>Inimigos dos Dragoes</p>
+                </div>
+                <div class="MenuDentroDivCards1">
+                    <img class="imgMenuDiv"src="Assets/Images/magonovo.jpg" alt="">
+                    <P>Como dominar a magia do fogo</P>
+
+                    
+                </div>
             </div>
+            
            
         </section>
 
@@ -166,7 +190,7 @@
             
     </footer>
 
-
+    <script src="Assets/Javascripts/scripts.js"></script>
     </main>
 </body>
 </html>

@@ -1,6 +1,7 @@
+
 *{
     font-size: 18px;
-    box-sizing: border-box;
+    
 
 }
 a{
@@ -24,6 +25,13 @@ header,
 
 }
 header{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: aliceblue;
+    transition: top 0.3s ease;
+
+
     border:solid 1px  #000;
     width: 100%;
     justify-content: space-between;
@@ -59,7 +67,7 @@ img{
     height: 80vh;
     display: flex;
     align-items: center;
-    
+    margin-top: 120px;
 
 }
 #banner h1{
@@ -82,6 +90,9 @@ img{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 0;
     
+}
+main{
+    background-color: aliceblue;
 }
 
 
@@ -107,9 +118,11 @@ img{
 
 
 
-#MenuDiv{
+#MenuDiv1{
+
+    margin-top: 80px;
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     
 }
@@ -118,22 +131,52 @@ img{
     font-size: 1.2rem;
 }
 
-#MenuDiv,h1{
+#MenuDiv h1{
     font-size: 2rem;
 }
 
-#MenuDentroDiv{
+#MenuDentroDiv1{
     display: flex;
-    justify-content: space-around;
+    overflow: hidden;
+    gap: 20px;
+    scroll-behavior: smooth;
     width: 100%;
+    margin: 0 auto;
 }
+
+.carousel-buttons{
+    margin: 20px 0px;
+    text-align: center;
+}
+.carousel-buttons button{
+    background-color: #531505;
+    color: #f2eeee;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    border: 1px solid black;
+
+    border-radius: 10px ;
+}
+.MenuDentroDivCards1{
+    flex: 0 0 580px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    text-align: center;
+
+    
+}
+
+
 #menuDentroDiv p{
     font-weight: bold;
     
 }
 
-#imgMenuDiv{
-    width: 100%;
+
+.imgMenuDiv{
     border: solid #111 ;
     border-radius: 10px;
     
@@ -307,4 +350,80 @@ footer icon{
 }
 .icon-footer{
     font-size: 3rem;
+}
+
+
+#container-cards1 {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    gap: 20px;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  .card1 {
+    flex: 0 0 580px;
+    scroll-snap-align: start;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+.menu-btn{
+    
+    background: none;
+    border:none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #333;
+}
+
+
+@media only screen and (max-width:992px){
+
+}
+
+
+
+@media only screen and (max-width:768px){
+
+}
+
+
+@media only screen and (max-width:600px){
+    .menu-btn{
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 200px;
+        z-index: 1100;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        left: -450px;
+        width: 250px;
+        background-color: aliceblue;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        padding: 60px;
+        transition: left 0.3s ease;
+    }
+    nav.active{
+        left: 0;
+    }
+    #navBar{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+    }
+    .navBarItem{
+        padding: 15px 20px;
+        display: block;
+        color: #333;
+    }
 }
